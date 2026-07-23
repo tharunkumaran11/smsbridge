@@ -47,14 +47,14 @@ services:
     restart: unless-stopped
 
   grafana:
-  image: grafana/grafana:latest
+    image: grafana/grafana:latest
 
-  container_name: grafana
+    container_name: grafana
 
-  ports:
-    - "3000:3000"
+    ports:
+      - "3000:3000"
 
-  depends_on:
-    - prometheus
+    depends_on:
+      - prometheus
 
-  restart: unless-stopped  
+    restart: unless-stopped
