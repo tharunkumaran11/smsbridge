@@ -16,7 +16,7 @@ app = FastAPI(
 @app.get("/")
 def home():
     return {
-        "project": "SMSBridge"
+        "project": "SMSBridge Version 2"
     }
 
 
