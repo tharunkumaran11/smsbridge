@@ -8,10 +8,27 @@ services:
 
     container_name: smsbridge-container
 
-    ports:
-      - "8000:8000"
-
     env_file:
       - .env
+
+    expose:
+      - "8000"
+
+    restart: unless-stopped
+
+  nginx:
+
+    image: nginx:latest
+
+    container_name: nginx
+
+    ports:
+      - "80:80"
+
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+
+    depends_on:
+      - smsbridge
 
     restart: unless-stopped
