@@ -1,8 +1,9 @@
-from fastapi import FastAPI
+from fastapi import Depends, FastAPI
 
 from app.models import SMSRequest
 from app.sms_service import send_sms
 from app.database import create_tables, get_sms_history
+from app.security import verify_api_key
 
 create_tables()
 
@@ -27,8 +28,10 @@ def health():
 
 
 @app.post("/send-sms")
-def send_sms_api(request: SMSRequest):
-
+def send_sms_api(
+    request: SMSRequest,
+    api_key: str = Depends(verify_api_key)
+):
     return send_sms(
         request.phone,
         request.message
@@ -36,6 +39,7 @@ def send_sms_api(request: SMSRequest):
 
 
 @app.get("/sms-history")
-def sms_history():
-
+def sms_history(
+    api_key: str = Depends(verify_api_key)
+):
     return get_sms_history()

@@ -1,7 +1,13 @@
-# Android SMS Gateway Configuration
+import os
 
-GATEWAY_URL = "http://192.168.1.3:8082"
+from dotenv import load_dotenv
 
-GATEWAY_TOKEN = "dee71860-a11f-4f7c-a911-2e37e5c961ac"
+load_dotenv()
 
-TIMEOUT = 10
+GATEWAY_URL = os.getenv("GATEWAY_URL", "")
+
+GATEWAY_TOKEN = os.getenv("GATEWAY_TOKEN", "")
+
+TIMEOUT = int(os.getenv("TIMEOUT", "10"))
+
+API_KEY = os.getenv("API_KEY", "smsbridge123")
