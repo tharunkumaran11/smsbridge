@@ -22,7 +22,19 @@ jobs:
 
           script: |
             cd ~/smsbridge
+
+            echo "Pulling latest source..."
             git pull origin master
-            docker-compose down
-            docker-compose build
-            docker-compose up -d
+
+            echo "Applying Kubernetes manifests..."
+            kubectl apply -f k8s/secret.yaml
+            kubectl apply -f k8s/deployment.yaml
+            kubectl apply -f k8s/service.yaml
+
+            echo "Restarting deployment..."
+            kubectl rollout restart deployment smsbridge
+
+            echo "Waiting for rollout..."
+            kubectl rollout status deployment smsbridge
+
+            echo "Deployment Successful!"
