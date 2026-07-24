@@ -2,26 +2,43 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: smsbridge
+
 spec:
   replicas: 1
+
   selector:
     matchLabels:
       app: smsbridge
+
   template:
     metadata:
       labels:
         app: smsbridge
+
     spec:
       containers:
-      - name: smsbridge
-        image: tharunm11/smsbridge:latest
-        imagePullPolicy: Always
-        ports:
-        - containerPort: 8000
-        env:
-        - name: GATEWAY_URL
-          value: "http://YOUR_PHONE_IP:8082"
-        - name: GATEWAY_TOKEN
-          value: "YOUR_GATEWAY_TOKEN"
-        - name: API_KEY
-          value: "smsbridge123"
+        - name: smsbridge
+          image: tharunm11/smsbridge:latest
+          imagePullPolicy: Always
+
+          ports:
+            - containerPort: 8000
+
+          env:
+            - name: GATEWAY_URL
+              valueFrom:
+                secretKeyRef:
+                  name: smsbridge-secret
+                  key: GATEWAY_URL
+
+            - name: GATEWAY_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: smsbridge-secret
+                  key: GATEWAY_TOKEN
+
+            - name: API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: smsbridge-secret
+                  key: API_KEY
