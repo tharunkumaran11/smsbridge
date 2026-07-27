@@ -55,10 +55,9 @@ securely to the Android gateway using Tailscale.
 
 # 🏗 Architecture
 
-Replace with your generated diagram:
 
- text
-screenshots/architecture.png
+
+
 
 
  md
