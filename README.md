@@ -1206,12 +1206,12 @@ Aspiring DevOps Engineer | Cloud Enthusiast | Backend Developer
 </a>
 
 <!-- Replace with your LinkedIn profile -->
-<a href="https://linkedin.com/in/YOUR-LINKEDIN">
+<a href="https://linkedin.com/in/tharunkumaran11">
 <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin">
 </a>
 
 <!-- Replace with your email -->
-<a href="mailto:YOUR_EMAIL@gmail.com">
+<a href="mailto:tharunkumaranm@outlook.com">
 <img src="https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail">
 </a>
 
