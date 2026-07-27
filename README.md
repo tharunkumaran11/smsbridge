@@ -123,7 +123,7 @@ smsbridge/
 
 # 📖 Swagger UI
 
- md
+
 <p align="center">
 <img src="screenshots/api-swagger.png">
 </p>
@@ -136,7 +136,7 @@ smsbridge/
 Displays: - Total API Requests - Requests by Endpoint - HTTP Status
 Codes - 95th Percentile Response Time
 
- md
+ 
 <p align="center">
 <img src="screenshots/api-dashboard.png">
 </p>
@@ -149,7 +149,7 @@ Codes - 95th Percentile Response Time
 Displays: - CPU Usage - Memory Usage - Prometheus Status - Available
 Memory - CPU Trend
 
- md
+ 
 <p align="center">
 <img src="screenshots/infrastructure-dashboard.png">
 </p>
@@ -162,7 +162,7 @@ Memory - CPU Trend
 Workflow: 1. Push code to GitHub 2. GitHub Actions builds Docker image
 3. Image pushed to Docker Hub 4. Kubernetes deployment updated
 
- md
+ 
 <p align="center">
 <img src="screenshots/github-actions.png">
 </p>
@@ -172,7 +172,7 @@ Workflow: 1. Push code to GitHub 2. GitHub Actions builds Docker image
 
 # 🐳 Docker Hub
 
- md
+ 
 <p align="center">
 <img src="screenshots/dockerhub.png">
 </p>
