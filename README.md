@@ -57,15 +57,15 @@ securely to the Android gateway using Tailscale.
 
 Replace with your generated diagram:
 
-``` text
-assets/architecture.png
-```
+ text
+screenshots/architecture.png
 
-``` md
+
+ md
 <p align="center">
 <img src="screenshots/architecture.png" width="950">
 </p>
-```
+
 
 ------------------------------------------------------------------------
 
