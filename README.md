@@ -322,7 +322,7 @@ Every SMS request follows this process:
 7. The recipient receives the message.
 
 <p align="center">
-<img src="screenshots/sms-delivery.png" width="350">
+<img src="screenshots/sms-delivery.jpeg" width="350">
 </p>
 
 ---
