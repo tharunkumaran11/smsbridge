@@ -60,7 +60,7 @@ securely to the Android gateway using Tailscale.
 
 
 
- md
+ 
 <p align="center">
 <img src="screenshots/architecture.png" width="950">
 </p>
