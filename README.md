@@ -63,7 +63,7 @@ assets/architecture.png
 
 ``` md
 <p align="center">
-<img src="assets/architecture.png" width="950">
+<img src="screenshots/architecture.png" width="950">
 </p>
 ```
 
@@ -94,7 +94,7 @@ smsbridge/
 ├── app/
 ├── k8s/
 ├── .github/workflows/
-├── assets/
+├── screenshots/
 │   ├── architecture.png
 │   ├── api-swagger.png
 │   ├── api-dashboard.png
@@ -126,7 +126,7 @@ smsbridge/
 
 ``` md
 <p align="center">
-<img src="assets/api-swagger.png">
+<img src="screenshots/api-swagger.png">
 </p>
 ```
 
@@ -139,7 +139,7 @@ Codes - 95th Percentile Response Time
 
 ``` md
 <p align="center">
-<img src="assets/api-dashboard.png">
+<img src="screenshots/api-dashboard.png">
 </p>
 ```
 
@@ -152,7 +152,7 @@ Memory - CPU Trend
 
 ``` md
 <p align="center">
-<img src="assets/infrastructure-dashboard.png">
+<img src="screenshots/infrastructure-dashboard.png">
 </p>
 ```
 
@@ -165,7 +165,7 @@ Workflow: 1. Push code to GitHub 2. GitHub Actions builds Docker image
 
 ``` md
 <p align="center">
-<img src="assets/github-actions.png">
+<img src="screenshots/github-actions.png">
 </p>
 ```
 
@@ -175,7 +175,7 @@ Workflow: 1. Push code to GitHub 2. GitHub Actions builds Docker image
 
 ``` md
 <p align="center">
-<img src="assets/dockerhub.png">
+<img src="screenshots/dockerhub.png">
 </p>
 ```
 
